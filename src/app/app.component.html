@@ -18,4 +18,11 @@
 <p *ngIf="xyz">Secret password = tuna </p>
 
 <button (click)= onToggle()>log keeper</button>
-<p *ngFor = "let logitem of log">{{ logitem }}</p>
+<p *ngFor = "let logitem of log"
+
+>{{ logitem }}</p><br>
+<button class="btn-btn success" [routerLink]="['/']">home</button>
+<button class="btn-btn success" [routerLink]="['/users']">user</button>
+
+checking routes <strong>working</strong>
+<router-outlet></router-outlet>
